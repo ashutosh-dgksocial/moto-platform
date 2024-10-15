@@ -1,42 +1,53 @@
 import { IoIosSearch } from "react-icons/io";
+import ButtonSecondary from "../../components/ButtonSecondary/ButtonSecondary";
+import { FaCar } from "react-icons/fa";
+// import { Link } from "react-router-dom";
+import { IoPricetagsOutline, IoSearch } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
+import { CgProfile } from "react-icons/cg";
 
 const AppHeader = () => {
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+    <header className="bg-white">
+      <div className="container mx-auto flex items-center justify-between py-4 px-2">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <img
-            src="https://via.placeholder.com/40"
-            alt="logo"
-            className="h-10 w-10"
-          />
-          <h1 className="text-2xl font-semibold">Drivco</h1>
-          <p className="text-sm italic">AUTOMOTIVE CAR DEALER</p>
+        <div className="mr-6 flex items-center space-x-2">
+          <div>
+            <FaCar size={50} />
+          </div>
+          <div className="flex flex-col">
+            <h1 className="text-4xl font-bold leading-9">Drivco</h1>
+            <p className="text-[9px] italic">AUTOMOTIVE CAR DEALER</p>
+          </div>
         </div>
         {/* Navigation */}
-        <nav className="hidden md:flex">
-          <div className="flex h-[50px] items-center justify-between rounded-[3px] border border-slate-200 bg-transparent px-4 py-2 text-sm leading-5 text-slate-400 shadow-sm transition duration-300 hover:border-slate-300 focus:border-slate-400 focus:shadow focus:outline-none md:h-[72px]">
-            <div>
-              <IoIosSearch size={30} className="font-semibold text-[#8BB239]" />
-            </div>
-            <div className="flex flex-grow items-center">
-              <input
-                type="text"
-                placeholder="Enter your question or keyword"
-                className="w-full rounded-lg border-0 p-3 focus:outline-none focus:ring-0"
-              />
-              <button className="ml-2 h-[35px] w-[100px] rounded-[3px] bg-[#8BB239] p-2 px-6 text-[14px] font-semibold text-white md:h-[48px]">
-                SEARCH
-              </button>
-            </div>
-          </div>
-        </nav>
+        <div className="hidden bg-white md:flex md:w-[29rem]">
+          <label className="flex h-[48px] w-full cursor-pointer items-center justify-between rounded-[4px] border border-slate-200 bg-[white] px-4 py-2 pr-0 text-sm leading-5 text-slate-400 shadow-sm transition duration-300 focus-within:border-slate-400 focus-within:shadow hover:border-slate-300">
+            <input
+              type="text"
+              placeholder="Search your products"
+              className="w-full border-0 bg-[white] px-3 text-gray-600 focus:bg-white focus:outline-none focus:ring-0"
+            />
+            <button className="ml-2 flex h-[auto] w-[65px] items-center justify-center rounded-[4px] rounded-l-none bg-[#2b2a2a] font-semibold text-white md:h-[48px]">
+              <IoSearch size={18} />
+            </button>
+          </label>
+        </div>
         {/* Right actions */}
-        <div className="flex items-center space-x-4">
-          <button className="text-sm">Sell With Us</button>
-          <button className="rounded-md bg-green-500 px-4 py-2 text-white">
-            Sign Up
+        <div className="flex items-center space-x-5">
+          <p className="hidden items-center text-sm font-medium lg:flex">
+            <IoPricetagsOutline size={18} className="text-[#58d992dc]" />
+            <span className="ml-1">SELL WITH US</span>
+          </p>
+          <p className="flex items-center text-sm font-medium">
+            <CiHeart size={20} className="text-[#58d992dc]" />
+            <span className="ml-1">SAVE</span>
+          </p>
+          <button className="flex items-center text-nowrap rounded-[4px] bg-[#58d993] px-4 py-2 text-sm text-black">
+            <CgProfile size={20} className="hidden text-[#454545] lg:flex" />
+            <span className="ml-1 text-[12px] font-semibold lg:text-[16px]">
+              SIGN UP
+            </span>
           </button>
         </div>
       </div>
