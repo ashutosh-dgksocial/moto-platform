@@ -10,8 +10,15 @@ import {
 import { CiHeart } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import Hamburger from "../../components/Hamburger/Hamburger";
+import { useState } from "react";
 
 const AppHeader = () => {
+  const [isOpen, setIsOpen] = useState(false); // State for tracking if Hamburger is open
+
+  const handleClick = () => {
+    setIsOpen(prev => !prev); // Toggle isOpen state
+    alert('hello');
+  };
   return (
     <header className="bg-white">
       <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-4 py-4 md:px-8">
@@ -64,7 +71,8 @@ const AppHeader = () => {
             <span className="ml-1 text-nowrap font-semibold">Cart (0)</span>
 
             <div className="ml-2">
-              <Hamburger />
+            <Hamburger isOpen={isOpen} onClick={handleClick}  />
+              {/* <Hamburger /> */}
             </div>
           </a>
         </div>

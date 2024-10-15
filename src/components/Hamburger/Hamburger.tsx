@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Hamburger: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+interface HamburgerProps {
+  isOpen: boolean;
+  onClick: () => void;
+}
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
 
+const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onClick }) => {
   return (
-    <button
-      onClick={handleClick}
-      className="flex flex-col items-end justify-center gap-1"
-    >
+    <button onClick={onClick} className="flex flex-col items-end justify-center gap-1">
       {/* First span */}
       <span
         className={`block h-0.5 w-9 rounded-sm bg-gray-800 transition-all duration-300 ease-out ${
