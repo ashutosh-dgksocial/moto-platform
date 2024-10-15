@@ -5,7 +5,6 @@
 body {
   /* background-color: #f0f0f0; */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background: linear-gradient(90deg, #caeadfc9 18%, #f8f3fa 35%);
   margin: 0;
   padding: 0;
 }
