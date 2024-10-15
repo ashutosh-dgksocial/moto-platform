@@ -12,7 +12,7 @@ const HeroSection = (props: Props) => {
         background: "linear-gradient(90deg, #caeadfc9 18%, #f8f3fa 35%)",
       }}
     >
-      <section className="mx-auto flex max-w-screen-2xl flex-col items-start justify-center space-y-8 px-4 py-10 md:flex-row md:space-y-0 md:py-16">
+      <section className="mx-auto flex max-w-screen-2xl flex-col items-start justify-center space-y-8 px-4 py-10 md:flex-row md:space-y-0 md:py-28">
         {/* Left Panel */}
         <div className="w-full space-y-4 md:w-[50%] mt-20">
           <p className="flex items-center gap-2 text-lg font-medium text-green-500">
@@ -24,9 +24,8 @@ const HeroSection = (props: Props) => {
             <br />
             Dream Car.
           </h2>
-          <p className="w-[70%] text-left text-xl text-gray-500">
-            Car dealerships may sell new cars from one or several manufacturers,
-            as well as used cars from a variety of sources.
+          <p className="w-[85%] text-left text-xl text-gray-500">
+          Car dealerships may sell new cars from one or several manufacturers, as well as used cars from a variety of sources.
           </p>
 
           {/* Trust rating */}

@@ -5,6 +5,7 @@ import HeroSection from "./sections/hero-section/HeroSection";
 import CustomerFeedback from "./sections/CustomerFeedback/CustomerFeedback";
 import NewsArticle from "./sections/NewsArticle/NewsArticle";
 import ExploreOption from "./sections/ExploreOption/ExploreOption";
+import BrandCategory from "./sections/BrandCategory/BrandCategory";
 
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
       <AppHeader />
       <HeroSection />
       <ExploreOption />
-      <CustomerFeedback/>
-      <NewsArticle/>
-      <AppFooter/>
+      <BrandCategory />
+      {/* <CustomerFeedback/> */}
+      {/* <NewsArticle/> */}
+      {/* <AppFooter/> */}
     </>
   );
 }

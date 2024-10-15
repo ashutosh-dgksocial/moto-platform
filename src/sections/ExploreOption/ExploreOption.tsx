@@ -6,8 +6,8 @@ type Props = {};
 const ExploreOption = (props: Props) => {
   return (
     <div className="bg-black">
-      <div className="mx-auto grid h-[100px] max-w-screen-2xl grid-cols-1 gap-6 bg-black py-5 pl-[1rem] text-white md:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:pl-0">
-        <div className="flex items-center border-b border-[#E4E7E9] pb-4 last:border-r-0 lg:justify-center lg:border-b-0 lg:border-r lg:pr-8">
+      <div className="mx-auto grid max-w-screen-2xl grid-cols-1 gap-6 bg-black py-10 pl-[1rem] text-white md:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:pl-0">
+        <div className="flex items-center border-b border-[gray] pb-4 last:border-r-0 lg:justify-center lg:border-b-0 lg:border-r lg:pr-8">
           <FaCar className="text-[30px] text-gray-400" />
           <div className="ml-2 lg:ml-4">
             <h4 className="text-[12px] font-medium lg:text-[14px]">
@@ -19,7 +19,7 @@ const ExploreOption = (props: Props) => {
           </div>
         </div>
 
-        <div className="flex items-center border-b border-[#E4E7E9] pb-4 last:border-r-0 lg:justify-center lg:border-b-0 lg:border-r lg:pr-8">
+        <div className="flex items-center border-b border-[gray] pb-4 last:border-r-0 lg:justify-center lg:border-b-0 lg:border-r lg:pr-8">
           <FaGavel className="text-[30px] text-gray-400" />
           <div className="ml-2 lg:ml-4">
             <h4 className="text-[12px] font-medium lg:text-[14px]">
@@ -31,7 +31,7 @@ const ExploreOption = (props: Props) => {
           </div>
         </div>
 
-        <div className="flex items-center border-b border-[#E4E7E9] pb-4 last:border-r-0 lg:justify-center lg:border-b-0 lg:border-r lg:pr-8">
+        <div className="flex items-center border-b border-[gray] pb-4 last:border-r-0 lg:justify-center lg:border-b-0 lg:border-r lg:pr-8">
           <FaTag className="text-[30px] text-gray-400" />
           <div className="ml-2 lg:ml-4">
             <h4 className="text-[12px] font-medium lg:text-[14px]">
@@ -43,7 +43,7 @@ const ExploreOption = (props: Props) => {
           </div>
         </div>
 
-        <div className="flex items-center border-b border-[#E4E7E9] pb-4 last:border-r-0 lg:justify-center lg:border-b-0">
+        <div className="flex items-center border-b border-[gray] pb-4 last:border-r-0 lg:justify-center lg:border-b-0">
           <FaPhone className="text-[30px] text-gray-400" />
           <div className="ml-2 lg:ml-4">
             <h4 className="text-[12px] font-medium lg:text-[14px]">
