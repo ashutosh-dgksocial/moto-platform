@@ -12,16 +12,17 @@ const HeroSection = (props: Props) => {
         background: "linear-gradient(90deg, #caeadfc9 18%, #f8f3fa 35%)",
       }}
     >
-      <section className="container mx-auto flex flex-col items-start gap-5 justify-center space-y-8 py-10 md:flex-row md:space-y-0 md:py-16">
+      <section className="mx-auto flex max-w-screen-2xl flex-col items-start justify-center space-y-8 px-4 py-10 md:flex-row md:space-y-0 md:py-16">
         {/* Left Panel */}
-        <div className="w-full space-y-4 md:w-[70%]">
+        <div className="w-full space-y-4 md:w-[50%] mt-20">
           <p className="flex items-center gap-2 text-lg font-medium text-green-500">
             <span>Fastest Speed </span>
             <BsSpeedometer size={25} />
           </p>
-          <h2 className="text-left text-3xl font-bold md:text-5xl">
-            The Best Way <br />
-            to Buy Your Dream Car.
+          <h2 className="text-left text-3xl font-bold leading-[67px] md:text-[60px]">
+            The Best Way Buy
+            <br />
+            Dream Car.
           </h2>
           <p className="w-[70%] text-left text-xl text-gray-500">
             Car dealerships may sell new cars from one or several manufacturers,

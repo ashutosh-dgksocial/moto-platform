@@ -14,7 +14,7 @@ import Hamburger from "../../components/Hamburger/Hamburger";
 const AppHeader = () => {
   return (
     <header className="bg-white">
-      <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-8">
+      <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-4 py-4 md:px-8">
         {/* Logo */}
         <div className="mr-1 flex items-center space-x-2 md:mr-6">
           <div>
