@@ -8,20 +8,27 @@ const BrandCategory = (props: Props) => {
           {Array.from({ length: 12 }).map((_, index) => (
             <div
               key={index}
-              className="flex min-h-[180px] flex-col items-center justify-center gap-4 rounded-xl bg-[#faf8fb] p-6"
+              className="relative flex min-h-[180px] flex-col items-center justify-center gap-4 rounded-xl p-6 overflow-hidden transition-all duration-300 group cursor-pointer bg-[#faf8fb]"
             >
-              <div className="flex w-full justify-center">
+              {/* Gradient Image */}
+              <div
+                className="cursor-pointer absolute inset-0 bg-cover bg-center transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                style={{
+                  backgroundImage: 'url(images/gradient.png)',
+                }}
+              />
+              <div className="flex w-full justify-center relative z-10">
                 <img
                   src={"images/audi.svg"}
                   alt={`Brand Icon ${index + 1}`}
-                  className="h-auto w-full max-w-[70px] object-contain"
+                  className="h-auto w-full max-w-[50px] object-contain"
                 />
               </div>
-              <div className="flex w-full justify-center">
+              <div className="flex w-full justify-center relative z-10">
                 <img
                   src={"images/car.svg"}
                   alt={`Brand Icon ${index + 1}`}
-                  className="h-auto w-full max-w-[110px] object-contain"
+                  className="h-auto w-full max-w-[100px] object-contain"
                 />
               </div>
             </div>

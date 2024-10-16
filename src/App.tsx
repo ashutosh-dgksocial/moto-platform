@@ -6,8 +6,7 @@ import CustomerFeedback from "./sections/CustomerFeedback/CustomerFeedback";
 import NewsArticle from "./sections/NewsArticle/NewsArticle";
 import ExploreOption from "./sections/ExploreOption/ExploreOption";
 import BrandCategory from "./sections/BrandCategory/BrandCategory";
-import Sidebar from "./sections/AppHeader/Sidebar";
-
+import MostSearched from "./sections/MostSearched/MostSearched";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       <HeroSection />
       <ExploreOption />
       <BrandCategory />
-      <Sidebar />
+      <MostSearched />
 
       {/* <CustomerFeedback/> */}
       {/* <NewsArticle/> */}
