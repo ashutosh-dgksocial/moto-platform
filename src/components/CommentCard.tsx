@@ -29,13 +29,13 @@ const CommentCard: React.FC<CardComponentProps> = ({
   };
 
   return (
-    <div className="max-w-md rounded-lg border border-gray-300 bg-[#f6f4fa]">
+    <div className="max-w-md rounded-xl border border-gray-300 bg-[#f6f4fa] hover:border-[#46d993] transition duration-300">
       <div className="px-6 py-6">
         <div className="flex justify-between mt-4">
           <div className="flex">{renderStars()}</div>
           <img src={image} alt="User" className="object-cover" />
         </div>
-        <p className="mt-4 text-[20px] text-gray-700">{description}</p>
+        <p className="mt-4  sm:text-[10px] md:text-[14px] lg:text-[18px] xl-text-[30px] text-gray-700">{description}</p>
         <div className="mt-4 text-[16px] font-bold text-gray-700">{Name}</div>
       </div>
     </div>

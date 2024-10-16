@@ -10,8 +10,8 @@ function App() {
     <>
       <AppHeader />
       <CustomerFeedback/>
-      {/* <NewsArticle/> */}
-      {/* <AppFooter/> */}
+      <NewsArticle/> 
+      <AppFooter/>
     </>
   );
 }

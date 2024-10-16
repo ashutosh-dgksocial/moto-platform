@@ -26,7 +26,7 @@ const articles = [
 
 const NewsArticle = () => {
   return (
-    <div className="h-[100vh] w-full bg-[#faf8fb]">
+    <div className="h-auto w-full bg-[#faf8fb] pb-6">
       <div className="container mx-auto px-6 ">
         <div className="flex flex-col">
           <div
