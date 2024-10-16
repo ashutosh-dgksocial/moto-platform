@@ -17,9 +17,9 @@ function App() {
       <BrandCategory />
       <MostSearched />
 
-      {/* <CustomerFeedback/> */}
-      {/* <NewsArticle/> */}
-      {/* <AppFooter/> */}
+      <CustomerFeedback/>
+      <NewsArticle/> 
+      <AppFooter/>
     </>
   );
 }
